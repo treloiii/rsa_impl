@@ -32,7 +32,7 @@ public class Main {
 
         BigInteger nB =pB.multiply(qB);
         BigInteger eulerFuncB=eulerFunc(pB,qB);
-        BigInteger e1=new BigInteger("65537");
+        BigInteger e1=new BigInteger("257");
         BigInteger dB=e1.modPow(BigInteger.valueOf(-1),eulerFuncB);
 
         BigInteger[] publicKeyB=new BigInteger[]{e1,nB};
